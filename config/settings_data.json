@@ -1,0 +1,348 @@
+{
+  "current": {
+    "color_body_bg": "#fafafa",
+    "color_body_text": "#3c7190",
+    "color_primary_color": "#3c7190",
+    "color_primary_button_text": "#ffffff",
+    "color_sale_badge": "#c8493f",
+    "color_borders": "#3c7190",
+    "color_form": "#f4f4f4",
+    "color_image_overlay_text": "#fff",
+    "color_image_overlay": "#333333",
+    "image_overlay_opacity": 25,
+    "type_header_font": "roboto_slab_n7",
+    "type_header_base_size": "28px",
+    "type_base_font": "helvetica_n4",
+    "type_base_size": "15px",
+    "type_button_base_size": "14px",
+    "type_navigation_base_size": "16px",
+    "cart_enable_ajax": true,
+    "show_breadcrumb_nav": false,
+    "share_image": "shopify:\/\/shop_images\/DAD66E42-1D8C-4027-843E-3C8DC4AAA287.png",
+    "social_facebook_link": "https:\/\/facebook.com\/melvinhgf.net.solutions",
+    "social_twitter_link": "https:\/\/twitter.com\/melvinhgf_solns",
+    "social_pinterest_link": "https:\/\/twitter.com\/melvinhgf_soln",
+    "social_instagram_link": "https:\/\/twitter.com\/melvinhgf_solns",
+    "social_snapchat_link": "",
+    "social_google_plus_link": "",
+    "social_tumblr_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "social_fancy_link": "",
+    "main_blog": "news",
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "favicon": "shopify:\/\/shop_images\/DAD66E42-1D8C-4027-843E-3C8DC4AAA287.png",
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/D3AA0667-3824-487C-9A97-D138F5D8373B.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Roboto",
+    "checkout_body_font": "Open Sans",
+    "checkout_accent_color": "#3c7190",
+    "checkout_button_color": "#cc9a33",
+    "checkout_error_color": "#e32c2b",
+    "sections": {
+      "featured-products": {
+        "type": "featured-products",
+        "settings": {
+          "title": "Featured Collection",
+          "home_page_featured_products": "men-s-jeans",
+          "home_featured_products_row_num": 2
+        }
+      },
+      "featured-content": {
+        "type": "featured-content",
+        "settings": {
+          "section_title": "Talk about your brand",
+          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "menu",
+            "settings": {
+              "title": "Links",
+              "menu": "footer"
+            }
+          },
+          "1561081491110": {
+            "type": "newsletter",
+            "settings": {
+              "subtext": "<p>Promotions, new products and sales. Directly to your inbox.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "1561081491110"
+        ],
+        "settings": {
+          "show_payment_icons": true
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/D3AA0667-3824-487C-9A97-D138F5D8373B.png",
+          "logo_max_width": "150",
+          "show_announcement": true,
+          "home_page_only": true,
+          "announcement_text": "Announce something here",
+          "announcement_link": "",
+          "tagline": "<p>22 Sin Ming Lane #06-76 Singapore 573969&nbsp;(UEN 53337350J)<\/p>"
+        }
+      },
+      "sidebar": {
+        "type": "sidebar",
+        "settings": {
+          "main_menu_link_list": "main-menu"
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "product_quantity_enable": false,
+          "vendor_show": false,
+          "social_sharing_products": true,
+          "product_description_position": "below",
+          "show_extra_tab": false,
+          "extra_tab_content": "",
+          "product_image_zoom_type": "lightbox",
+          "enable_payment_button": true,
+          "add_to_cart_width": "regular"
+        }
+      },
+      "1561099919748": {
+        "type": "advanced-content",
+        "blocks": {
+          "1561099919748-0": {
+            "type": "html",
+            "settings": {
+              "code": "<div id=\"evm-instagram-feed\"><\/div>\n<script src=\"https:\/\/expertvillagemedia.com\/instagramfeed\/embed.js\" data-shop-id=\"hgfs-store.myshopify.com\"><\/script>",
+              "width": "100%",
+              "alignment": "top-middle"
+            }
+          }
+        },
+        "block_order": [
+          "1561099919748-0"
+        ],
+        "settings": {
+          "title": "Social Media Feeds"
+        }
+      },
+      "1561100417281": {
+        "type": "slideshow",
+        "blocks": {
+          "1561100417281-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/D3AA0667-3824-487C-9A97-D138F5D8373B.png",
+              "alignment": "center center",
+              "overlay_opacity": 30,
+              "color_text": "#ffffff",
+              "text_alignment": "center",
+              "slide_heading": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1561100417281-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/business-woman-with-wool-hat.jpg",
+              "alignment": "center center",
+              "overlay_opacity": 30,
+              "color_text": "#ffffff",
+              "text_alignment": "center",
+              "slide_heading": "Women’s Fashion",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1561100883736": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/mens-business-fashion.jpg",
+              "alignment": "center center",
+              "overlay_opacity": 30,
+              "color_text": "#ffffff",
+              "text_alignment": "center",
+              "slide_heading": "Men’s Fashion",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1561101086831": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/fashion-photography-purse-in-hand.jpg",
+              "alignment": "center center",
+              "overlay_opacity": 30,
+              "color_text": "#ffffff",
+              "text_alignment": "center",
+              "slide_heading": "Fashion Accessories",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1561101385537": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/glowing-sale-sign.jpg",
+              "alignment": "center center",
+              "overlay_opacity": 30,
+              "color_text": "#ffffff",
+              "text_alignment": "center",
+              "slide_heading": "Sale",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1561100417281-0",
+          "1561100417281-1",
+          "1561100883736",
+          "1561101086831",
+          "1561101385537"
+        ],
+        "settings": {
+          "slider_height": "large",
+          "slider_home_auto": true,
+          "slider_home_rate": 7,
+          "slider_home_transition": "slide",
+          "text_size": "small"
+        }
+      }
+    },
+    "content_for_index": [
+      "1561100417281",
+      "featured-products",
+      "featured-content",
+      "1561099919748"
+    ]
+  },
+  "presets": {
+    "Light": {
+      "color_body_bg": "#ffffff",
+      "color_body_text": "#333333",
+      "color_primary_color": "#333333",
+      "color_primary_button_text": "#ffffff",
+      "color_sale_badge": "#c8493f",
+      "color_borders": "#e8e8e8",
+      "color_form": "#f4f4f4",
+      "color_image_overlay_text": "#fff",
+      "color_image_overlay": "#333333",
+      "image_overlay_opacity": "25",
+      "type_header_font": "times_new_roman_n4",
+      "type_header_base_size": "28px",
+      "type_base_font": "helvetica_n4",
+      "type_base_size": "15px",
+      "type_button_base_size": "14px",
+      "type_navigation_base_size": "16px",
+      "show_breadcrumb_nav": true,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "sections": {
+        "featured-products": {
+          "type": "featured-products",
+          "settings": {
+            "home_page_featured_products": "frontpage"
+          }
+        },
+        "featured-content": {
+          "type": "featured-content",
+          "settings": {
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "menu",
+              "settings": {
+                "menu": "footer"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0"
+          ],
+          "settings": {
+          }
+        }
+      },
+      "content_for_index": [
+        "featured-products",
+        "featured-content"
+      ]
+    },
+    "Beauty": {
+      "color_body_bg": "#f7f7f7",
+      "color_body_text": "#3c4049",
+      "color_primary_color": "#d97c76",
+      "color_primary_button_text": "#ffffff",
+      "color_sale_badge": "#d97c76",
+      "color_borders": "#d7d8d2",
+      "color_form": "#ffffff",
+      "color_image_overlay_text": "#fff",
+      "color_image_overlay": "#3c4049",
+      "image_overlay_opacity": "25",
+      "type_header_font": "pt_serif_n7",
+      "type_header_base_size": "28px",
+      "type_base_font": "pt_serif_n4",
+      "type_base_size": "16px",
+      "type_button_base_size": "12px",
+      "type_navigation_base_size": "16px",
+      "show_breadcrumb_nav": true,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "sections": {
+        "featured-products": {
+          "type": "featured-products",
+          "settings": {
+            "home_page_featured_products": "frontpage"
+          }
+        },
+        "featured-content": {
+          "type": "featured-content",
+          "settings": {
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "menu",
+              "settings": {
+                "menu": "footer"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0"
+          ],
+          "settings": {
+          }
+        }
+      },
+      "content_for_index": [
+        "featured-products",
+        "featured-content"
+      ]
+    }
+  }
+}

@@ -1,0 +1,145 @@
+<!doctype html>
+<html class="supports-no-js" lang="{{ shop.locale }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="{{ settings.color_primary }}">
+  <meta name="google-site-verification" content="5Kacb8lAOjtoyq0cL80viVDFrn63Ddb4GF8qOnqX1So" />
+  <meta name="google-signin-client_id" content="15668274-prhokrn1b5eio84l9ekb621k3rehcjlp.apps.googleusercontent.com">
+
+  <link rel="canonical" href="{{ canonical_url }}">
+<script src='//cdn.freshmarketer.com/432889/1242336.js'></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  {% if settings.favicon %}
+    <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png" />
+  {% endif %}
+
+  <title>
+  {{ page_title }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+  </title>
+
+  {% if page_description %}
+    <meta name="description" content="{{ page_description | escape }}">
+  {% endif %}
+
+  {% include 'social-meta-tags' %}
+<script type="text/javascript">(function e(){var e=document.createElement("script");e.type="text/javascript",e.async=true,e.src="//staticw2.yotpo.com/GcPPYA0bA1D43bZZHgyeshhxYLeelM3u5uG9u2Rl/widget.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();</script>
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('supports-no-js', 'supports-js');
+
+    var theme = {
+      mapStrings: {
+        addressError: {{ 'homepage.map.address_error' | t | json }},
+        addressNoResults: {{ 'homepage.map.address_no_results' | t | json }},
+        addressQueryLimit: {{ 'homepage.map.address_query_limit_html' | t | json }},
+        authError: {{ 'homepage.map.auth_error_html' | t | json }}
+      }
+    }
+  </script>
+
+  {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
+
+  {{ content_for_header }}
+{{ 'bold-brain-widget.css' | asset_url | stylesheet_tag }}
+
+{%- include 'bold-common' -%}
+
+
+  {{ 'jquery-1.11.0.min.js' | asset_url | script_tag }}
+  {{ 'modernizr.min.js' | asset_url | script_tag }}
+
+  <script src="{{ 'lazysizes.min.js' | asset_url }}" async="async"></script>
+
+  {% if template.directory == 'customers' %}
+    {{ 'shopify_common.js' | shopify_asset_url | script_tag }}
+  {% endif %}
+  <script type='text/javascript'>var jiltStorefrontParams = {{ shop.metafields.jilt_storefront | json }}; {% if customer %}jiltStorefrontParams.customerID = {{ customer.id }};{% endif %}</script>
+<!-- start Mixpanel --><script type="text/javascript">(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
+0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
+mixpanel.init("ae4df3108df88b045efa4a402d5c8810");</script><!-- end Mixpanel -->
+</head>
+<body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template | split: '.' | first | handle }}">
+
+  <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
+
+  {% section "header" %}
+
+    {% comment %}
+    <hr class="small--hide hr--small">
+    {% endcomment %}
+
+  <div class="site-wrapper">
+
+    <div class="grid">
+
+      {% section "sidebar" %}
+
+      <main class="main-content grid__item medium-up--four-fifths" id="MainContent" role="main">
+        {% unless template.name == 'index' %}
+          <hr class="hr--border-top small--hide">
+        {% endunless %}
+        {% if settings.show_breadcrumb_nav and template.name != 'index' %}
+          {% include 'breadcrumb-nav' %}
+        {% endif %}
+        {{ content_for_layout }}
+      </main>
+<!-- Twitter universal website tag code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','o1yx1');
+twq('track','PageView');
+</script>
+<!-- End Twitter universal website tag code -->
+    </div>
+
+    <hr>
+
+    {% section "footer" %}
+
+    {%- if template.name == 'index' -%}
+      <p id="slideshow-info" class="visually-hidden" aria-hidden="true">
+        {{- 'homepage.slideshow.navigation_instructions' | t -}}
+      </p>
+    {%- endif -%}
+
+  </div>
+
+  {% if template.name == 'product' or template.name == 'index' %}
+    {{ 'option_selection.js' | shopify_asset_url | script_tag }}
+    <script>
+      // Set a global variable for theme.js to use on product single init
+      window.theme = window.theme || {};
+      theme.moneyFormat = {{ shop.money_format | json }};
+      theme.productSingleObject = {{ product | json }};
+    </script>
+  {% endif %}
+
+  <ul hidden>
+    <li id="a11y-refresh-page-message">{{ 'general.accessibility.refresh_page' | t }}</li>
+  </ul>
+
+  {{ 'theme.js' | asset_url | script_tag }}
+<!-- BOOSTFLOWSCRIPT CODE START -->{% include 'bf-tracking' %}<!-- BOOSTFLOWSCRIPT CODE END --> <!-- FRESHCHAT Snippet Start --> {% if customer %} <script> 
+                        if (typeof window.fcSettings === 'undefined') {
+                          window.fcSettings = {};
+                        }
+                        window.fcSettings.email = '{{ customer.email }}';
+                        window.fcSettings.firstName = '{{ customer.first_name }}';
+                        window.fcSettings.lastName = '{{ customer.last_name }}'; 
+                        window.fcSettings.externalId = '{{ customer.email }}';
+                        window.fcSettings.customerId = {{ customer.id }};
+                        {% if customer.phone %}
+                          window.fcSettings.phone = {{ customer.phone}};
+                        {% endif %}
+                        window.fcSettings.shopify_token = '089567efef5c66af3f079a5612bb6bca';
+                        {% if customer.metafields.freshchat.restoreId %}
+                          window.fcSettings.restoreId ='{{ customer.metafields.freshchat.restoreId }}';
+                        {% endif %}
+                      </script> {% endif %}  <!-- FRESHCHAT Snippet End --></body>
+</html>
