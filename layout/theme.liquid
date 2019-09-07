@@ -125,7 +125,7 @@ twq('track','PageView');
   </ul>
 
   {{ 'theme.js' | asset_url | script_tag }}
-<!-- BOOSTFLOWSCRIPT CODE START -->{% include 'bf-tracking' %}<!-- BOOSTFLOWSCRIPT CODE END --> <!-- FRESHCHAT Snippet Start --> {% if customer %} <script> 
+<!-- BOOSTFLOWSCRIPT CODE START -->{% include 'bf-tracking' %}<!-- BOOSTFLOWSCRIPT CODE END -->   <!-- FRESHCHAT Snippet Start --> {% if customer %} <script> 
                         if (typeof window.fcSettings === 'undefined') {
                           window.fcSettings = {};
                         }
@@ -134,11 +134,11 @@ twq('track','PageView');
                         window.fcSettings.lastName = '{{ customer.last_name }}'; 
                         window.fcSettings.externalId = '{{ customer.email }}';
                         window.fcSettings.customerId = {{ customer.id }};
-                        {% if customer.phone %}
+                        {% if customer.phone}}%}
                           window.fcSettings.phone = {{ customer.phone}};
                         {% endif %}
                         window.fcSettings.shopify_token = '089567efef5c66af3f079a5612bb6bca';
-                        {% if customer.metafields.freshchat.restoreId %}
+                        {% if customer.metafields.freshchat.restoreId} %}
                           window.fcSettings.restoreId ='{{ customer.metafields.freshchat.restoreId }}';
                         {% endif %}
                       </script> {% endif %}  <!-- FRESHCHAT Snippet End --></body>
