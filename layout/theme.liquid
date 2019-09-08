@@ -141,5 +141,7 @@ twq('track','PageView');
                         {% if customer.metafields.freshchat.restoreId} %}
                           window.fcSettings.restoreId ='{{ customer.metafields.freshchat.restoreId }}';
                         {% endif %}
-                      </script> {% endif %}  <!-- FRESHCHAT Snippet End --></body>
+                      </script> {% endif %}  <!-- FRESHCHAT Snippet End --> {% include 'smile-initializer' %}
+
+</body>
 </html>
